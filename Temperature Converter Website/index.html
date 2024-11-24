@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <!-- Add Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#" class="logo">
+          <i class="fas fa-thermometer-half"></i>
+          TempConverter
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="converter-box">
+        <h1>Temperature Converter</h1>
+        <div class="input-group">
+          <label for="temperature">Enter Temperature:</label>
+          <input
+            type="number"
+            id="temperature"
+            placeholder="Enter temperature"
+          />
+        </div>
+        <div class="input-group">
+          <label for="from">From:</label>
+          <select id="from">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="to">To:</label>
+          <select id="to">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+        <button class="btn" onclick="convertTemperature()">Convert</button>
+        <div class="result" id="result">Result will appear here</div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Created with ❤️ |
+        <a href="#" target="_blank">Temperature Converter</a> | &copy; 2024 All
+        Rights Reserved
+      </p>
+      <p>
+        <i class="fas fa-graduation-cap"></i> Learning made simple |
+        <a href="#">TempConverter</a> | &copy; 2024
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
